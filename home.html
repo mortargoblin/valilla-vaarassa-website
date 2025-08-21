@@ -1,34 +1,61 @@
 <div class="top">
-  <h1> Välillä väärässä </h1>
-  <p> 24-30.8 </p>
+  <div id="header-info">
+    <p> vapaa pääsy <br /> free entry </p>
+    <h1> Välillä <br /> väärässä </h1>
+    <div> 24-30.8 </div>
+  </div>
+  <div> 
+    Picture
+  </div>
 </div>
+
 <div class="wonky-container">
-  <div class="wonky-textbox">
+  <div class="wonky textbox">
   Välillä väärässä is an event-like, experimental contemporary art exhibition at Väärätalo, on Koskenparras in Imatra. The show features media installations, spatial works, performances, sound pieces, photography, drawings, a wall painting, and a radio program. Many of the works invite the audience to engage and interact with them.
   </div>
-  <div class="wonky-textbox">
+  <div class="wonky textbox">
     The exhibition has been created in collaboration with the City of Imatra and Aalto University’s Department of Art and Media. The works are connected to Imatra in different ways—through their site-specificity, their subject matter, or other conceptual links. The building itself, Väärätalo, frames the exhibition with its history, its recent past, and its present condition.
   </div>
-  <div class="wonky-textbox">
+  <div class="wonky textbox">
     The house, which once accommodated a hotel and nightclub, among other things, has stood empty for several years and no longer fully meets the expectations we usually place on a building. The participating artists have explored the spaces from their own perspectives, often using found materials from the house as starting points for their works. Inside turns outward, and the rooms reshape themselves to “host” the worlds that the artworks bring to life.
   </div>
-  <div class="wonky-textbox">
+  <div class="wonky textbox">
   For the artists, the working process has meant stepping into the unknown, facing unexpected situations and uncertainty. This has opened up new ways of seeing and making. The building itself exists in an in-between state, suspended between past and future. As human care has withdrawn, other beings have begun to take over the space. The works in the exhibition grow out of this condition, creating encounters at the threshold between what has been and what is yet to come.
   </div>
-  <div class="wonky-textbox">
+  <div class="wonky textbox">
     Alongside Aalto University students and staff, the exhibition also includes artists and faculty from Uniarts Helsinki’s Academy of Fine Arts, as well as local artists from Imatra.
   </div>
 
-  <div class="wonky-textbox">
+  <div class="wonky textbox">
     <h3>Participating artists:</h3>
 Ricardo Atienza,    Laura Beloff & Jurgis Peters,    Chynthia Blanchette,    Lily Díaz-Kommonen,    Euro & Kiiveri,    Henrik Frondelius,    Viljami Hyvärinen,    Markku Laskujärvi & Oliver Kalleinen,    Totti Korpua,    Heya Kwon,    Harri Laakso,    Markku Laskujärvi & Voth000 / 12mb RAM Studios,    Vertti Luostarinen,    Mikael Malin & Zina Marpegan & Jonna Eloranta,    Suthasinee Naktnasukanjn,    Mari Nurmesniemi,    Daniel Palpa,    Gabriella Presnal,    Gregoire Rousseau,    Joel Rännäri,    Markus Skraba,    Minna Suoniemi, featuring Valto Ala-Maunus and Juuso Tervo,    Sini Vihma,    Vastiala – Ylipieti,    Müge Yildiz,    Denise Ziegler
   </div>
 </div>
+
 <style>
+/* modular (and hacky) */
+
+h1 {
+  rotate: -5deg;
+  font-size: 60px;
+  text-align: right;
+}
+#header-info > p {
+  font-size: 30px;
+  rotate: -20deg;
+}
+#header-info > div {
+  font-size: 40px;
+}
+.top {
+  display: flex;
+}
 .wonky-container {
   margin-top: 100px;
+  margin-left: auto;
 }
-.wonky-textbox {
+.textbox {
+  rotate: -10deg;
   margin-top: 40px;
   /* wtf */
   max-width: 500px;
