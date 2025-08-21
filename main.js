@@ -17,9 +17,7 @@ function loadPageContent(content) {
   const xhr = new XMLHttpRequest();
   xhr.open('GET', content, true);
   xhr.onreadystatechange= function() {
-      //if (this.readyState!==4) return;
-      //if (this.status!==200) return; 
-      page.innerHTML= this.responseText;
+    page.innerHTML= this.responseText;
   };
   xhr.send();
 }
@@ -37,8 +35,11 @@ function wonkify(ammount = -10) {
 
 
 
-for (let i = 0; i < 50; i++) {
-  console.log(document.readyState);
-}
+// once document fully loaded
+document.addEventListener('readystatechange', function(evt) {
+  if(document.readyState === "complete"){
+    console.log(document.readyState);
+    wonkify();
+  }
+});
 
-wonkify();
