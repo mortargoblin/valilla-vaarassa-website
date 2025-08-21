@@ -20,7 +20,7 @@ function loadPageContent(content) {
     if (this.readyState === 4 && this.status === 200) {
       page.innerHTML = this.responseText;
       // specify wonkiness for different pages
-      if (content == 'artistsmap.html') {
+      if (content == 'artists.html') {
         wonkify(35);
       } else {
         wonkify();

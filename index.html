@@ -9,12 +9,12 @@
   <body>
     <main>
       <div id="wrapper">
-        <div id="left">
+        <div id="nav-container">
           <ul id="navbar">
             <li id="home">Home</li>
-            <li id="artistsmap">Artists map</li>
-            <li id="nav3">nav3</li>
-            <li id="nav4">nav4</li>
+            <li id="artists">Artists</li>
+            <li id="map">Map</li>
+            <li id="schedule">Schedule</li>
           </ul>
         </div>
         <div id="page">
@@ -30,13 +30,13 @@
     }
     #wrapper {
       display: flex;
-
+      flex-direction: row-reverse;
     }
     #page {
       display: inline;
       width: 80%;
     }
-    #left {
+    #nav-container {
       padding: 30px;
       font-size: 20px;
     }
