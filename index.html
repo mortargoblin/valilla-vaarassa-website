@@ -2,11 +2,13 @@
 <html>
   <head>
     <!--    <link rel="stylesheet" type="text/css" href="./main.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer type="text/javascript" src="./main.js"> </script>
   </head>
   <body>
     <main>
       <div id="wrapper">
+        <div id="header"></div>
         <div id="nav-container">
           <ul id="navbar">
             <li id="home">Home</li>
@@ -16,7 +18,6 @@
           </ul>
         </div>
         <div id="page"></div>
-        <div id="header"></div>
       </div>
     </main>
 
@@ -31,7 +32,6 @@
     }
     #wrapper {
       display: flex;
-      flex-direction: row-reverse;
     }
     #page {
       display: inline;
@@ -41,6 +41,7 @@
     #nav-container {
       padding: 30px;
       font-size: 20px;
+      order: 3;
     }
     #navbar > li {
       padding: 5px;
@@ -56,6 +57,31 @@
     }
     .top-info {
       justify-content: center;
+    }
+    @media screen and (max-width: 1300px) {
+      #wrapper {
+        flex-direction: column !important;
+      }
+      .top {
+        flex-direction: column;
+      }
+      img {
+        width: 100%;
+      }
+      #header-info {
+      }
+      #nav-container {
+        order: 0 !important;
+        text-align: center;
+      }
+      #navbar li {
+        list-style: none;
+        padding: 15px;
+        display: inline-block;
+      }
+      .fixed {
+        position: static !important;
+      }
     }
   </style>
 </html>

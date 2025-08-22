@@ -1,0 +1,11 @@
+# Prefix: Languagesystems
+# automatic
+languagesystem DFLT dflt;
+
+feature liga {
+# automatic
+lookupflag IgnoreMarks;
+sub f i by fi;
+sub f l by fl;
+} liga;
+

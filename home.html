@@ -1,11 +1,18 @@
 <div class="top">
   <div id="header-info">
-    <p> vapaa pääsy <br /> free entry </p>
-    <h1> Välillä <br /> väärässä </h1>
-    <div> 24-30.8 <br /> klo 12-18</div>
+    <div class="fixed">
+      <p> vapaa pääsy <br /> free entry </p>
+      <h1> Välillä <br /> väärässä </h1>
+      <div class="date"> 24-30.8 <br /> klo 12-18</div>
+    </div>
   </div>
-  <div> 
-    Picture
+  <div id="header-visual"> 
+    <img src="img/home.JPG" alt="reflection of clouds in a puddle">
+    <div class="address">
+      Koskenparras 3 <br />
+      Väärätalo <br />
+      Imatra 
+    </div>
   </div>
 </div>
 
@@ -40,16 +47,36 @@ h1 {
   font-size: 100px;
   text-align: right;
 }
-#header-info > p {
+img {
+  width: 100%
+}
+#header-info {
+  min-width: 400px;
+}
+#header-info p {
   font-size: 30px;
   rotate: -20deg;
 }
-#header-info > div {
+#header-info div {
   font-size: 40px;
+}
+#header-visual {
+  padding-top: 80px;
+  max-width: 800px;
+}
+.fixed {
+  position: fixed;
 }
 .top {
   display: flex;
   justify-content: center;
+}
+.date {
+  text-align: right;
+}
+.address {
+  font-size: 30px;
+  text-align: right;
 }
 .wonky-container {
   margin-left: auto;

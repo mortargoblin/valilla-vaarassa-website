@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="zero" format="2">
+	<advance width="511"/>
+	<unicode hex="0030"/>
+	<note>
+		zero
+  </note>
+	<outline>
+		<contour>
+			<point x="248" y="-16" type="qcurve" smooth="yes"/>
+			<point x="333" y="-16"/>
+			<point x="448" y="78"/>
+			<point x="474" y="166" type="qcurve"/>
+			<point x="476" y="171"/>
+			<point x="476" y="179" type="qcurve" smooth="yes"/>
+			<point x="476" y="187" type="line"/>
+			<point x="480" y="198"/>
+			<point x="491" y="208"/>
+			<point x="491" y="219" type="qcurve" smooth="yes"/>
+			<point x="491" y="224"/>
+			<point x="490" y="226" type="qcurve"/>
+			<point x="490" y="228"/>
+			<point x="491" y="231"/>
+			<point x="491" y="233" type="qcurve" smooth="yes"/>
+			<point x="491" y="236"/>
+			<point x="489" y="242" type="qcurve" smooth="yes"/>
+			<point x="452" y="348"/>
+			<point x="337" y="461"/>
+			<point x="259" y="461" type="qcurve" smooth="yes"/>
+			<point x="210" y="461"/>
+			<point x="123" y="422"/>
+			<point x="58" y="359"/>
+			<point x="20" y="278"/>
+			<point x="20" y="237" type="qcurve" smooth="yes"/>
+			<point x="20" y="195"/>
+			<point x="35" y="150" type="qcurve" smooth="yes"/>
+			<point x="61" y="69"/>
+			<point x="170" y="-15"/>
+		</contour>
+		<contour>
+			<point x="258" y="409" type="qcurve" smooth="yes"/>
+			<point x="376" y="409"/>
+			<point x="438" y="230" type="qcurve"/>
+			<point x="432" y="223"/>
+			<point x="426" y="207"/>
+			<point x="424" y="192"/>
+			<point x="424" y="182"/>
+			<point x="423" y="181" type="qcurve"/>
+			<point x="416" y="156"/>
+			<point x="390" y="105"/>
+			<point x="348" y="63"/>
+			<point x="289" y="37"/>
+			<point x="248" y="37" type="qcurve" smooth="yes"/>
+			<point x="213" y="37"/>
+			<point x="150" y="63"/>
+			<point x="102" y="113"/>
+			<point x="73" y="188"/>
+			<point x="73" y="236" type="qcurve" smooth="yes"/>
+			<point x="73" y="269"/>
+			<point x="104" y="331"/>
+			<point x="155" y="379"/>
+			<point x="222" y="409"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>assembly</key>
+			<string>PUSHW[ ]	/* 3 values pushed */
+34 5 3 
+CALL[ ]	/* CallFunction */
+NPUSHW[ ]	/* 27 values pushed */
+6 34 22 34 38 34 54 34 70 34 86 34 102 34 118 34 134 34 150 34 166 34 182 34 198 34 13 
+DELTAP1[ ]	/* DeltaExceptionP1 */
+NPUSHW[ ]	/* 5 values pushed */
+213 34 229 34 2 
+DELTAP1[ ]	/* DeltaExceptionP1 */
+SVTCA[0]	/* SetFreedomAndProjectionVectorToAxis */
+PUSHW[ ]	/* 3 values pushed */
+39 0 3 
+CALL[ ]	/* CallFunction */
+PUSHW[ ]	/* 3 values pushed */
+10 29 3 
+CALL[ ]	/* CallFunction */
+IUP[0]	/* InterpolateUntPts */
+IUP[1]	/* InterpolateUntPts */</string>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2019-05-08 08:27:13 +0000</string>
+			<key>public.markColor</key>
+			<string>0.85,0.26,0.06,1</string>
+		</dict>
+	</lib>
+</glyph>
