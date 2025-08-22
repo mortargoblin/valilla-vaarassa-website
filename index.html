@@ -2,9 +2,7 @@
 <html>
   <head>
     <!--    <link rel="stylesheet" type="text/css" href="./main.css"> -->
-
     <script defer type="text/javascript" src="./main.js"> </script>
-
   </head>
   <body>
     <main>
@@ -12,13 +10,13 @@
         <div id="nav-container">
           <ul id="navbar">
             <li id="home">Home</li>
+            <li id="schedule">Schedule</li>
             <li id="artists">Artists</li>
             <li id="map">Map</li>
-            <li id="schedule">Schedule</li>
           </ul>
         </div>
-        <div id="page">
-        </div>
+        <div id="page"></div>
+        <div id="header"></div>
       </div>
     </main>
 
@@ -28,13 +26,17 @@
     body {
 
     }
+    li {
+      cursor: pointer;
+    }
     #wrapper {
       display: flex;
       flex-direction: row-reverse;
     }
     #page {
       display: inline;
-      width: 80%;
+      margin: auto;
+      flex-grow: 2;
     }
     #nav-container {
       padding: 30px;
@@ -43,9 +45,17 @@
     #navbar > li {
       padding: 5px;
     }
-    li {
+    #header {
+    }
+    
+    .top-info, .bottom-info {
+      display: flex;
+    }
+    .info-container {
 
-      cursor: pointer;
+    }
+    .top-info {
+      justify-content: center;
     }
   </style>
 </html>
