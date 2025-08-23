@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Ugrave" format="2">
+	<advance width="687"/>
+	<unicode hex="00D9"/>
+	<note>
+		Ugrave
+  </note>
+	<outline>
+		<contour>
+			<point x="184" y="879" type="qcurve"/>
+			<point x="206" y="850"/>
+			<point x="271" y="822"/>
+			<point x="305" y="813" type="qcurve"/>
+			<point x="327" y="804"/>
+			<point x="346" y="794"/>
+			<point x="358" y="786"/>
+			<point x="375" y="773"/>
+			<point x="394" y="758" type="qcurve"/>
+			<point x="405" y="749"/>
+			<point x="416" y="754" type="qcurve" smooth="yes"/>
+			<point x="424" y="757"/>
+			<point x="435" y="775"/>
+			<point x="431" y="783" type="qcurve" smooth="yes"/>
+			<point x="428" y="790"/>
+			<point x="423" y="794" type="qcurve"/>
+			<point x="408" y="806"/>
+			<point x="396" y="820"/>
+			<point x="388" y="830"/>
+			<point x="374" y="837"/>
+			<point x="355" y="844" type="qcurve" smooth="yes"/>
+			<point x="339" y="850"/>
+			<point x="301" y="860"/>
+			<point x="265" y="875"/>
+			<point x="233" y="894"/>
+			<point x="222" y="909" type="qcurve"/>
+			<point x="217" y="916"/>
+			<point x="204" y="917"/>
+			<point x="197" y="915" type="qcurve" smooth="yes"/>
+			<point x="187" y="912"/>
+			<point x="176" y="895"/>
+			<point x="180" y="886" type="qcurve" smooth="yes"/>
+			<point x="182" y="880"/>
+		</contour>
+		<component base="U"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2020-01-24 11:09:11 +0000</string>
+			<key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+			<string>U</string>
+			<key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+			<string>U</string>
+			<key>public.markColor</key>
+			<string>0.67,0.95,0.38,1</string>
+		</dict>
+	</lib>
+</glyph>

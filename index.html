@@ -24,11 +24,19 @@
   </body>
 
   <style>
+    @font-face {
+      font-family: 'Director';
+      src:
+        local("Director");
+        url("font/Director-Regular.otf") format("opentype");
+    }
     body {
-
+      font-family: 'Director';
     }
     li {
       cursor: pointer;
+      list-style: none;
+      text-align: right;
     }
     #wrapper {
       display: flex;

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="onesuperior" format="2">
+	<advance width="201"/>
+	<unicode hex="00B9"/>
+	<note>
+		onesuperior
+  </note>
+	<outline>
+		<contour>
+			<point x="175" y="370" type="qcurve"/>
+			<point x="173" y="377"/>
+			<point x="157" y="387"/>
+			<point x="138" y="394"/>
+			<point x="119" y="398"/>
+			<point x="114" y="398" type="qcurve"/>
+			<point x="114" y="413"/>
+			<point x="122" y="441"/>
+			<point x="122" y="457" type="qcurve" smooth="yes"/>
+			<point x="122" y="471"/>
+			<point x="114" y="489"/>
+			<point x="101" y="489" type="qcurve" smooth="yes"/>
+			<point x="97" y="489" type="line"/>
+			<point x="89" y="487"/>
+			<point x="81" y="475"/>
+			<point x="81" y="470" type="qcurve" smooth="yes"/>
+			<point x="81" y="466"/>
+			<point x="83" y="460"/>
+			<point x="83" y="456" type="qcurve" smooth="yes"/>
+			<point x="83" y="443"/>
+			<point x="75" y="412"/>
+			<point x="75" y="397" type="qcurve"/>
+			<point x="69" y="395"/>
+			<point x="51" y="391"/>
+			<point x="36" y="383"/>
+			<point x="25" y="372"/>
+			<point x="25" y="364" type="qcurve" smooth="yes"/>
+			<point x="25" y="355"/>
+			<point x="37" y="345"/>
+			<point x="45" y="345" type="qcurve" smooth="yes"/>
+			<point x="57" y="345"/>
+			<point x="86" y="360"/>
+			<point x="100" y="360" type="qcurve" smooth="yes"/>
+			<point x="114" y="360"/>
+			<point x="144" y="345"/>
+			<point x="157" y="345" type="qcurve" smooth="yes"/>
+			<point x="163" y="345"/>
+			<point x="176" y="356"/>
+			<point x="176" y="364" type="qcurve" smooth="yes"/>
+			<point x="176" y="368"/>
+		</contour>
+		<contour>
+			<point x="37" y="533" type="qcurve"/>
+			<point x="56" y="524"/>
+			<point x="78" y="524" type="qcurve" smooth="yes"/>
+			<point x="87" y="524"/>
+			<point x="117" y="525"/>
+			<point x="144" y="530"/>
+			<point x="164" y="541"/>
+			<point x="164" y="551" type="qcurve" smooth="yes"/>
+			<point x="164" y="559"/>
+			<point x="152" y="570"/>
+			<point x="144" y="570" type="qcurve" smooth="yes"/>
+			<point x="127" y="570"/>
+			<point x="95" y="563"/>
+			<point x="78" y="563" type="qcurve" smooth="yes"/>
+			<point x="69" y="563"/>
+			<point x="49" y="570"/>
+			<point x="45" y="570" type="qcurve" smooth="yes"/>
+			<point x="37" y="570"/>
+			<point x="25" y="560"/>
+			<point x="25" y="550" type="qcurve" smooth="yes"/>
+			<point x="25" y="545"/>
+			<point x="33" y="534"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>assembly</key>
+			<string>PUSHW[ ]	/* 3 values pushed */
+32 14 3 
+CALL[ ]	/* CallFunction */
+NPUSHW[ ]	/* 27 values pushed */
+6 32 22 32 38 32 54 32 70 32 86 32 102 32 118 32 134 32 150 32 166 32 182 32 198 32 13 
+DELTAP1[ ]	/* DeltaExceptionP1 */
+NPUSHW[ ]	/* 5 values pushed */
+213 32 229 32 2 
+DELTAP1[ ]	/* DeltaExceptionP1 */
+PUSHW[ ]	/* 1 value pushed */
+32 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 1 value pushed */
+25 
+MDRP[11100]	/* MoveDirectRelPt */
+PUSHW[ ]	/* 1 value pushed */
+19 
+MDRP[10000]	/* MoveDirectRelPt */
+PUSHW[ ]	/* 1 value pushed */
+19 
+MDAP[1]	/* MoveDirectAbsPt */
+PUSHW[ ]	/* 1 value pushed */
+25 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 1 value pushed */
+22 
+MDRP[10000]	/* MoveDirectRelPt */
+PUSHW[ ]	/* 1 value pushed */
+22 
+MDAP[1]	/* MoveDirectAbsPt */
+PUSHW[ ]	/* 1 value pushed */
+14 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 1 value pushed */
+43 
+MDRP[10000]	/* MoveDirectRelPt */
+PUSHW[ ]	/* 1 value pushed */
+14 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 1 value pushed */
+55 
+MDRP[11100]	/* MoveDirectRelPt */
+SVTCA[0]	/* SetFreedomAndProjectionVectorToAxis */
+PUSHW[ ]	/* 3 values pushed */
+52 5 3 
+CALL[ ]	/* CallFunction */
+PUSHW[ ]	/* 1 value pushed */
+52 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 1 value pushed */
+8 
+MDRP[11100]	/* MoveDirectRelPt */
+PUSHW[ ]	/* 1 value pushed */
+5 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 1 value pushed */
+11 
+MDRP[10000]	/* MoveDirectRelPt */
+PUSHW[ ]	/* 1 value pushed */
+52 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 1 value pushed */
+46 
+MDRP[10000]	/* MoveDirectRelPt */
+PUSHW[ ]	/* 1 value pushed */
+52 
+SRP0[ ]	/* SetRefPoint0 */
+PUSHW[ ]	/* 1 value pushed */
+49 
+MDRP[10000]	/* MoveDirectRelPt */
+PUSHW[ ]	/* 1 value pushed */
+49 
+MDAP[1]	/* MoveDirectAbsPt */
+IUP[0]	/* InterpolateUntPts */
+IUP[1]	/* InterpolateUntPts */</string>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2019-07-21 17:03:43 +0000</string>
+			<key>public.markColor</key>
+			<string>0.85,0.26,0.06,1</string>
+		</dict>
+	</lib>
+</glyph>

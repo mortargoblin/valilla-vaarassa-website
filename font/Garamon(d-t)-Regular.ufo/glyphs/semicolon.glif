@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="semicolon" format="2">
+	<advance width="272"/>
+	<unicode hex="003B"/>
+	<note>
+		semicolon
+  </note>
+	<outline>
+		<component base="comma"/>
+		<component base="period" xOffset="30" yOffset="280"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2019-07-21 16:55:07 +0000</string>
+			<key>public.markColor</key>
+			<string>0.06,0.6,0.98,1</string>
+		</dict>
+	</lib>
+</glyph>
