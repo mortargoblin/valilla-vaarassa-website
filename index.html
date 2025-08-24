@@ -24,12 +24,14 @@
   </body>
 
   <style>
+/*    
     @font-face {
       font-family: 'Director';
       src:
         local("Director");
         url("font/Director-Regular.otf") format("opentype");
     }
+*/
     body {
       font-family: 'Director';
     }
@@ -51,24 +53,31 @@
       font-size: 20px;
       order: 3;
     }
+    #navbar {
+      padding-left: 0px;
+    }
     #navbar > li {
       padding: 5px;
     }
     #header {
     }
-    
     .top-info, .bottom-info {
       display: flex;
     }
     .info-container {
-
     }
     .top-info {
       justify-content: center;
     }
+    .blueprint-container > div {
+      max-width: 470px;
+    }
     @media screen and (max-width: 1300px) {
       #wrapper {
         flex-direction: column !important;
+      }
+      .wonky {
+        rotate: 0deg;
       }
       .top {
         flex-direction: column;
@@ -82,15 +91,21 @@
         order: 0 !important;
         text-align: center;
       }
-      #navbar li {
+      #navbar > li {
         list-style: none;
-        padding: 15px;
+        padding: 12px;
+        margin: 5px;
         display: inline-block;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
       }
       .fixed {
         position: static !important;
       }
+      #circle, .blueprint-container > img {
+        display: none;
+      }
     }
   </style>
 </html>
-
