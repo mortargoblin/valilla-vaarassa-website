@@ -12,9 +12,9 @@
         <div id="nav-container">
           <ul id="navbar">
             <li id="home">Home</li>
-            <li id="schedule">Schedule</li>
+            <!-- <li id="schedule">Schedule</li>
             <li id="artists">Artists</li>
-            <li id="map">Map</li>
+            <li id="map">Map</li> -->
           </ul>
         </div>
         <div id="page"></div>
@@ -24,6 +24,8 @@
   </body>
 
   <style>
+/* VERY BAD, DO NOT READ !!!!!!! */
+
 /*    
     @font-face {
       font-family: 'Director';
@@ -72,6 +74,7 @@
     .blueprint-container > div {
       max-width: 470px;
     }
+    /* mobile viewport size */
     @media screen and (max-width: 1300px) {
       #wrapper {
         flex-direction: column !important;
@@ -90,18 +93,23 @@
       #nav-container {
         order: 0 !important;
         text-align: center;
+        padding: 0px;
       }
       #navbar > li {
         list-style: none;
-        padding: 12px;
-        margin: 5px;
+        padding: 8px;
+        margin: 4px;
         display: inline-block;
         background-color: black;
         color: white;
-        border-radius: 20px;
+        border-radius: 15px;
+        border: 2px solid grey;
       }
       .fixed {
         position: static !important;
+      }
+      .fixed > p {
+        max-width: 250px;
       }
       #circle, .blueprint-container > img {
         display: none;
