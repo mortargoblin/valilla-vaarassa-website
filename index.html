@@ -37,10 +37,11 @@
     body {
       font-family: 'Director';
     }
-    li {
+    #navbar > li {
       cursor: pointer;
       list-style: none;
       text-align: right;
+      font-size: 30px;
     }
     #wrapper {
       display: flex;
@@ -113,6 +114,12 @@
       }
       #circle, .blueprint-container > img {
         display: none;
+      }
+      #page {
+        max-width: 100%;
+      }
+      #artist-grid {
+        grid-template-columns: auto auto;
       }
     }
   </style>
