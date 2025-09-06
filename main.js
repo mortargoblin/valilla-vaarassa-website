@@ -27,18 +27,13 @@ function loadPageContent(content, target=page) {
         header.innerHTML = '';
         headerLoaded = false;
       } else if (!headerLoaded) {
-        console.log('loading header');
         loadPageContent('header.html', header);
         headerLoaded = true;
       }
-
       if (content === 'artists.html') {
         loadArtists();
-        wonkify(40);
-      } else {
-        wonkify();
       }
-
+      wonkify();
     }
   };
   xhr.send();
@@ -58,37 +53,57 @@ function loadArtists() {
   const artists = [
     { fname: 'Zina', lname: 'Marpegan' },
     { fname: 'Vertti', lname: 'Luostarinen' }, 
-    { fname: 'Vastiala', lname: '- Ylipieti' },
+    { fname: 'Vastiala', lname: '/ Ylipieti' },
+    { fname: 'Totti', lname: 'Korpua' },
     { fname: 'Suthasinee', lname: 'Naktnasukajn' }, 
-    { fname: 'Müge', lname: 'YILDIZ' }, 
-    { fname: 'Minne', lname: 'Suoniemi' }, 
+    { fname: 'Sini', lname: 'Vihma' }, 
+    { fname: 'Pia', lname: 'Euro' }, 
+    { fname: 'Müge', lname: 'Yildiz' }, 
+    { fname: 'Minna', lname: 'Suoniemi' }, 
     { fname: 'Markku', lname: 'Laskuj&#228;rvi' }, 
     { fname: 'Mari', lname: 'Nurmenniemi' }, 
     { fname: ['Lù', 'Vera'], lname: ['Chén', 'Rantamaa'] }, 
+    { fname: 'Lily', lname: 'Díaz-Kommonen' }, 
     { fname: ['Laura', 'Jurgis'], lname: ['Beloff', 'Peters'] }, 
-    { fname: ['Jonna', 'Zina'], lname: ['Eloranta', 'Marpegan'] }, 
+    { fname: ['Jonna', 'Zina', 'Mikael'], lname: ['Eloranta', 'Marpegan', 'Malin'] }, 
     { fname: 'Joel', lname: 'Rännäri' }, 
+    { fname: 'Heya', lname: 'Kwon' }, 
     { fname: 'Henrik', lname: 'Frondelius' }, 
     { fname: 'Harri', lname: 'Laakso' }, 
     { fname: 'Gabriella', lname: 'Presnal' }, 
+    { fname: 'Euro&', lname: 'Kiiveri' }, 
+    { fname: 'Denise', lname: 'Ziegler' }, 
     { fname: 'Daniel', lname: 'Palpa' }, 
     { fname: 'Cynthia', lname: 'Blanchette' }, 
-  ]
+  ];
   artists.forEach(function(artist) {
-    //console.log(artist.name);
-    console.log(artist.fname, Array.isArray(artist.fname));
     if (!Array.isArray(artist.fname)) {
       artistGrid.innerHTML += 
         `<div id="artist_${artist.fname}" class="wonky">
-          <div> ${artist.fname} </div>
-          <div> ${artist.lname} </div>
+          ${artist.fname} <br />
+          ${artist.lname} 
         </div>` 
     } else {
+      let artist_collective = '';
+      for (let i = 0; i < artist.fname.length; i++) {
+        artist_collective += `${artist.fname[i]} ${artist.lname[i]} <br />`
+      }
       artistGrid.innerHTML += 
         `<div id="artist_${artist.fname[0]}" class="wonky">
-          <div> ${artist.fname[0]} ${artist.lname[0]}</div>
-          <div> ${artist.fname[1]} ${artist.lname[1]}</div>
-        </div>` 
+         ` + artist_collective + `
+        </div>`;
+    }
+  });
+  artistGrid.addEventListener('click', function(evt) {
+    let artist;
+    if (evt.target.id.startsWith('artist')) {
+      artist = evt.target.id.slice(7).toLowerCase();
+      page.innerHTML = 
+        `<div style="padding: 20px; max-width: 850px; margin: auto;">
+          <img src="artists/${artist}.JPG" alt="artist work">
+          <div class="packed" id="artist-text"> </div>
+        </div>`;
+      loadPageContent(('artists/' + artist + '.html'), document.querySelector('#artist-text'));
     }
   });
 }
