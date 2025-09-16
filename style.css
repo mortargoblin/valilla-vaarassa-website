@@ -22,11 +22,12 @@ h1 {
   font-weight: 400;
   letter-spacing: -5%;
 }
-#navbar > li {
+#navbar li {
   cursor: pointer;
   list-style: none;
   text-align: right;
   font-size: 30px;
+  padding: 5px;
 }
 #artist-grid > div {
   cursor: pointer;
@@ -46,9 +47,6 @@ h1 {
 }
 #navbar {
   padding-left: 0px;
-}
-#navbar > li {
-  padding: 5px;
 }
 #header {
 }
@@ -78,13 +76,14 @@ h1 {
     width: 100%;
   }
   #header-info {
+    min-width: 100px !important;
   }
   #nav-container {
     order: 0 !important;
     text-align: center;
     padding: 0px;
   }
-  #navbar > li {
+  #navbar li {
     list-style: none;
     padding: 8px;
     margin: 4px;
@@ -95,7 +94,7 @@ h1 {
     border: 2px solid grey;
   }
   .fixed {
-    position: static !important;
+    position: relative !important;
   }
   .fixed > p {
     max-width: 250px;
