@@ -75,8 +75,8 @@ h1 {
   img {
     width: 100%;
   }
-  #header-info {
-    min-width: 100px !important;
+  #header {
+    display: none;
   }
   #nav-container {
     order: 0 !important;

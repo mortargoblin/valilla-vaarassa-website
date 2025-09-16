@@ -29,9 +29,11 @@ function loadPageContent(content, target=page) {
       } else if (!headerLoaded) {
         loadPageContent('header.html', header);
         headerLoaded = true;
-      }
+      } 
       if (content === 'artists.html') {
         loadArtists();
+      } else if (content === 'about.html') {
+        loadAbout();
       }
       wonkify();
     }
@@ -75,6 +77,7 @@ function loadArtists() {
     { fname: 'Denise', lname: 'Ziegler' }, 
     { fname: 'Daniel', lname: 'Palpa' }, 
     { fname: 'Cynthia', lname: 'Blanchette' }, 
+    { fname: 'Ricardo', lname: 'Atienza' },
   ];
   artists.forEach(function(artist) {
     if (!Array.isArray(artist.fname)) {
@@ -106,4 +109,11 @@ function loadArtists() {
       loadPageContent(('artists/' + artist + '.html'), document.querySelector('#artist-text'));
     }
   });
+}
+function loadAbout() {
+  const picture_count = 37;
+  document.querySelector('#about_images').innerHTML = '';
+  for (let i = 0; i < picture_count; i++) {
+    document.querySelector('#about_images').innerHTML += `<img src="./img/about/small_about_${i+1}.JPG" alt="about picture ${i+1}">`;
+  } 
 }
