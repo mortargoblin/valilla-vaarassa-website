@@ -55,6 +55,7 @@ function loadArtists() {
   const artists = [
     { fname: 'Zina', lname: 'Marpegan' },
     { fname: 'Vertti', lname: 'Luostarinen' }, 
+    { fname: 'Viljami', lname: 'Hyvärinen' },
     { fname: 'Vastiala', lname: '/ Ylipieti' },
     { fname: 'Totti', lname: 'Korpua' },
     { fname: 'Suthasinee', lname: 'Naktnasukajn' }, 
@@ -82,9 +83,9 @@ function loadArtists() {
   artists.forEach(function(artist) {
     if (!Array.isArray(artist.fname)) {
       artistGrid.innerHTML += 
-        `<div id="artist_${artist.fname}" class="wonky">
+        `<div class="wonky"> <a id="artist_${artist.fname}">
           ${artist.fname} <br />
-          ${artist.lname} 
+          ${artist.lname} </a>
         </div>` 
     } else {
       let artist_collective = '';
@@ -92,8 +93,10 @@ function loadArtists() {
         artist_collective += `${artist.fname[i]} ${artist.lname[i]} <br />`
       }
       artistGrid.innerHTML += 
-        `<div id="artist_${artist.fname[0]}" class="wonky">
-         ` + artist_collective + `
+        `<div class="wonky"> 
+          <a id="artist_${artist.fname[0]}">
+            ` + artist_collective + ` 
+          </a>
         </div>`;
     }
   });
